@@ -34,11 +34,38 @@ p {
   font-size: 6rem;
   text-align: center;
   color: #f9fafa;
-  text-shadow: 2px 2px 2px #969696;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   margin: 0;
   padding: 0;
   font-weight: 300;
   margin-top: 15vh;
+}
+.header__title a:hover {
+  text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
+  background-image: linear-gradient(#f9fafa, #f9fafa);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #f9fafa;
+  text-decoration: none;
+}
+.header__title a:hover::selection {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background: #f9fafa;
+}
+.header__title a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background: #f9fafa;
+}
+.header__title a:hover *,
+.header__title a:hover *:after,
+.header__title a:hover:after,
+.header__title a:hover *:before,
+.header__title a:hover:before {
+  text-shadow: none;
+}
+.header__title a:hover:visited {
+  color: #f9fafa;
 }
 .header__subtitle {
   margin: 0;
@@ -46,10 +73,10 @@ p {
   font-size: 2em;
   text-align: center;
   color: #f9fafa;
-  text-shadow: 1px 1px 1px #969696;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   font-weight: 300;
 }
-footer {
+.footer {
   background-color: #33474d;
   color: #f9fafa;
   padding: 2rem 0;
@@ -57,7 +84,7 @@ footer {
   flex-direction: row;
   justify-content: center;
 }
-footer p {
+.footer p {
   margin: 0;
 }
 .footer-content {
@@ -105,6 +132,87 @@ footer p {
 .footer-links__link a:hover:visited {
   color: #0ba6d7;
 }
+article {
+  max-width: 50rem;
+  text-align: justify;
+}
+h1,
+h2,
+strong {
+  color: #3c4447;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+.figure {
+  margin-bottom: 2rem;
+}
+.figure__caption {
+  text-align: center;
+  font-size: 0.8em;
+}
+.figure__image {
+  max-width: 50rem;
+}
+figure {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+}
+blockquote {
+  color: #3c4447;
+  border-left: 0.7rem solid #2a4a54;
+  margin: 2rem 1rem;
+  padding: 0.5rem 1rem;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #2a4a54;
+  content: "\201C" /*Unicode for Left Double Quote*/;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-family: "Noto Serif", serif;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+article:hover blockquote a {
+  color: currentColor;
+}
+article blockquote:hover a {
+  color: #0ba6d7;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table th {
+  border-bottom: 1px solid #3c4447;
+  padding: 0.8rem;
+}
+table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #d6dbdc;
+}
 @font-face {
   font-family: "Noto Sans";
   src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
@@ -140,26 +248,6 @@ main {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-}
-article {
-  max-width: 50rem;
-  text-align: justify;
-}
-h1,
-h2,
-strong {
-  color: #3c4447;
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a {
-  font-style: normal;
-}
-h1 {
-  margin-top: 1em;
-  margin-bottom: 1rem;
 }
 a {
   font-style: italic;

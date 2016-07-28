@@ -1,4 +1,5 @@
 @import "variables"
+@import "underline"
 
 filter(n)
 	-webkit-filter n
@@ -21,11 +22,14 @@ filter(n)
 	font-size: 6rem
 	text-align: center
 	color: headerColor
-	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1)
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 	margin: 0
 	padding: 0
 	font-weight: 300
 	margin-top: 15vh
+
+.header__title a:hover
+	link-underline(rgba(0,0,0,0), headerColor, headerColor)
 
 .header__subtitle
 	margin: 0
@@ -33,5 +37,5 @@ filter(n)
 	font-size: 2em
 	text-align: center
 	color: headerColor
-	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1)
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 	font-weight: 300
