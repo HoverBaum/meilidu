@@ -9,6 +9,7 @@ after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
     git remote rm origin
     git remote add origin https://hoverbaum:$GITHUB_API_KEY@github.com/HoverBaum/meilidu
+    git pull
     git checkout gh-pages
     git merge master
     git config --global push.default simple
