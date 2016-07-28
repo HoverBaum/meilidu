@@ -12,16 +12,19 @@
 baseFontSize = 1em
 fontRatio = 1.25
 
+html
+	font-size: baseFontSize
+
 fontSizeCalc(base, ratio, count)
-  calcSize = base
-  count = 6 - count
-  for $i in 1..count +1
-    calcSize = calcSize * ratio
-  calcSize
+	calcSize = base
+	count = 6 - count
+	for $i in 1..count +1
+		calcSize = calcSize * ratio
+	calcSize
 
 for size in 1 2 3 4 5
-  h{size}
-    font-size: fontSizeCalc(baseFontSize, fontRatio, size)
+	h{size}
+		font-size: fontSizeCalc(baseFontSize, fontRatio, size)
 
 p
-  font-size: baseFontSize
+	font-size: baseFontSize

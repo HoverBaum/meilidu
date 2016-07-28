@@ -82,7 +82,7 @@ article:hover blockquote a
 	color: currentColor
 
 article blockquote:hover a
-	color: mainColor
+	link-underline(backgroundColor, mainColor, mainColor)
 
 // Tables
 
@@ -104,7 +104,7 @@ table
 .article__date
 	font-size: 0.7rem
 	position: absolute
-	left: -3rem
+	left: -2.5rem
 
 @media only screen and (max-width: breakMediumEnd)
 	.article__date
