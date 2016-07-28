@@ -13,7 +13,7 @@ after_success: |
     git clone --quiet --branch=gh-pages https://$GITHUB_API_KEY@github.com/HoverBaum/meilidu gh-pages > /dev/null
 
     cd gh-pages
-    git merge origin/master
+    git merge origin/master -m "merge for gh-pages update"
     git add -f .
     git commit --allow-empty -m "Update gh-pages"
 
