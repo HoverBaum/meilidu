@@ -43,29 +43,28 @@ main
 
 
 a
-	font-style: italic
 	text-decoration: none
-	color: currentColor
+	color: textColor
 	transition: color 0.2s ease-out
 
 a:visited
 	color: currentColor
 
 a:hover
-	text-decoration: underline
 	link-underline(backgroundColor, mainColor, mainColor)
 
-article:hover a
-	color: mainColor
-
-article:hover h1 a
-	color: currentColor
-
-article h1 a:hover
-	link-underline(backgroundColor, currentColor, currentColor)
 
 //Center articles even on huge screen
 @media screen and (min-width: 100 rem)
 	article
 		margin-left: 20rem
 		margin-right: 20rem
+
+.different-posts
+	display: block
+	width: contentWidth
+	text-align: center
+	& a
+		link-underline(backgroundColor, textColor, textColor)
+	& a:hover
+		link-underline(backgroundColor, mainColor, mainColor)
