@@ -10,7 +10,7 @@ after_success: |
     cd $Home
     git config --global user.email "travis@travis-ci.org"
     git config --global user.name "travis-ci"
-    git clone --quiet --branch=gh-pages https://$GITHUB_API_KEY@github.com/HoverBaum/leilidu gh-pages > /dev/null
+    git clone --quiet --branch=gh-pages https://$GITHUB_API_KEY@github.com/HoverBaum/meilidu gh-pages > /dev/null
 
     cd gh-pages
     git merge master
