@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Archive</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+	<header class="header">
+		<h1 class="header__title"><a href="index.html">MeiliDu</a></h1>
+		<h2 class="header__subtitle">Untertitel</h2>
+	</header>
+
+	<main>
+
+		<h1>Archive</h1>
+
+		<ul class="archive">
+			<li class="archive__expendable">
+				2016
+				<ul>
+					<li class="archive__expendable">
+						August
+						<ul>
+							<li class="archive__entry">Headline</li>
+							<li class="archive__entry">Blog post</li>
+						</ul>
+					</li>
+					<li>July</li>
+				</ul>
+			</li>
+			<li class="archive__year">2015</li>
+		</ul>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer__element">
+				<ul class="footer-links">
+					<li class="footer-links__link"><a href="#">About</a></li>
+					<li class="footer-links__link"><a href="#">The author</a></li>
+					<li class="footer-links__link"><a href="#">more links</a></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__element">
+				<p>Hi there,
+					<br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const expandables = document.querySelectorAll('.archive__expendable')
+		for(let i = 0; i < expandables.length; i++) {
+			expandables[i].addEventListener('click', (e) => {
+				console.log(e.target);
+				e.target.classList.toggle('archive__expendable_expanded')
+			})
+		}
+	</script>
+
+</body>
+
+</html>

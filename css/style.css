@@ -1,3 +1,6 @@
+html {
+  font-size: 1em;
+}
 h1 {
   font-size: 3.814697265625em;
 }
@@ -99,14 +102,16 @@ p {
   width: 12.5rem;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 40em) {
   .footer__element {
     width: 100%;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .footer__element {
-    width: 32%;
+    width: 50%;
+    font-size: 2.5rem;
   }
 }
 .footer-links {
@@ -325,6 +330,30 @@ article:hover blockquote a {
   color: currentColor;
 }
 article blockquote:hover a {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(#0ba6d7, #0ba6d7);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #0ba6d7;
+  text-decoration: none;
+}
+article blockquote:hover a::selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+article blockquote:hover a::-moz-selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+article blockquote:hover a *,
+article blockquote:hover a *:after,
+article blockquote:hover a:after,
+article blockquote:hover a *:before,
+article blockquote:hover a:before {
+  text-shadow: none;
+}
+article blockquote:hover a:visited {
   color: #0ba6d7;
 }
 table {
@@ -342,13 +371,27 @@ table td {
 .article__date {
   font-size: 0.7rem;
   position: absolute;
-  left: -3rem;
+  left: -2.5rem;
 }
 @media only screen and (max-width: 64em) {
   .article__date {
     position: relative;
     left: 0;
   }
+}
+.archive {
+  width: 50rem;
+  padding: 3rem;
+  display: block;
+  font-size: 2rem;
+}
+.archive__expendable {
+  height: 1.2em;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+.archive__expendable_expanded {
+  height: auto;
 }
 @font-face {
   font-family: "Noto Sans";
@@ -385,6 +428,10 @@ main {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+main > h1 {
+  width: 100%;
+  text-align: center;
 }
 a {
   text-decoration: none;
