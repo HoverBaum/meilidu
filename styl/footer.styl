@@ -42,5 +42,7 @@ footerTextColor = backgroundColor
 .footer-links__link
 	list-style-type: none
 
-.footer-links__link a:hover
-	link-underline(footerBackgroundColor, mainColor, mainColor)
+.footer-links__link a
+	link-underline(footerBackgroundColor, footerTextColor, footerTextColor)
+	&:hover
+		link-underline(footerBackgroundColor, mainColor, mainColor)
