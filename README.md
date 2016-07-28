@@ -8,8 +8,8 @@ Todo:
 - [x] headlines
 - [x] general layout
 - [x] nice underline
-- [ ] images
-- [ ] lists
-- [ ] quotes
-- [ ] tables
+- [x] images
+- [x] lists
+- [x] quotes
+- [x] tables
 - [ ] code blocks
