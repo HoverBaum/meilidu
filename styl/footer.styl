@@ -25,6 +25,15 @@ footerTextColor = backgroundColor
 .footer__element
 	padding: 1rem
 	width: (contentWidth / 4)
+	box-sizing: border-box
+
+@media only screen and (max-width: 660px)
+	.footer__element
+		width: 100%
+
+@media only screen and (min-width: breakMediumStart) and (max-width: breakMediumEnd)
+	.footer__element
+		width: 32%
 
 .footer-links
 	margin: 0
