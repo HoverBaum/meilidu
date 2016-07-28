@@ -20,7 +20,10 @@ after_success: |
     git push -fq origin gh-pages > /dev/null
 
     echo -e "Updated gh-pages.\n"
-    
+
+
+  fi
+
 #    git checkout -b gh-pages
 #    git merge master
 #    git config --global push.default simple
@@ -31,4 +34,3 @@ after_success: |
     # This works because the API key can replace your password.
 #    git push --set-upstream origin gh-pages -f -q &2>/dev/null
 #    cd "$TRAVIS_BUILD_DIR"
-  fi
