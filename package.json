@@ -1,0 +1,10 @@
+{
+  "name": "meilidu",
+  "version": "0.1.0",
+  "scripts": {
+    "stylus": "node node_modules/stylus/bin/stylus styl/style.styl -o css/style.css --watch"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}

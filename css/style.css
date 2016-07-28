@@ -1,0 +1,239 @@
+h1 {
+  font-size: 3.814697265625em;
+}
+h2 {
+  font-size: 3.0517578125em;
+}
+h3 {
+  font-size: 2.44140625em;
+}
+h4 {
+  font-size: 1.953125em;
+}
+h5 {
+  font-size: 1.5625em;
+}
+p {
+  font-size: 1em;
+}
+.header {
+  background-image: url("/img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: block;
+  box-sizing: border-box;
+  -webkit-filter: saturate(120%);
+  -moz-filter: saturate(120%);
+  filter: saturate(120%);
+  position: relative;
+}
+.header__title {
+  font-size: 6rem;
+  text-align: center;
+  color: #f9fafa;
+  text-shadow: 2px 2px 2px #969696;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  margin-top: 15vh;
+}
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+  color: #f9fafa;
+  text-shadow: 1px 1px 1px #969696;
+  font-weight: 300;
+}
+footer {
+  background-color: #33474d;
+  color: #f9fafa;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer p {
+  margin: 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 50rem;
+}
+.footer__element {
+  padding: 1rem;
+  width: 12.5rem;
+}
+.footer-links {
+  margin: 0;
+  padding: 0;
+}
+.footer-links__link {
+  list-style-type: none;
+}
+.footer-links__link a:hover {
+  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
+  background-image: linear-gradient(#0ba6d7, #0ba6d7);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #0ba6d7;
+  text-decoration: none;
+}
+.footer-links__link a:hover::selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+.footer-links__link a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+.footer-links__link a:hover *,
+.footer-links__link a:hover *:after,
+.footer-links__link a:hover:after,
+.footer-links__link a:hover *:before,
+.footer-links__link a:hover:before {
+  text-shadow: none;
+}
+.footer-links__link a:hover:visited {
+  color: #0ba6d7;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");
+  font-style: normal;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #f9fafa;
+}
+body {
+  font-family: "Noto Sans";
+  color: #33474d;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+article {
+  max-width: 50rem;
+  text-align: justify;
+}
+h1,
+h2,
+strong {
+  color: #3c4447;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  font-style: normal;
+}
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: currentColor;
+  transition: color 0.2s ease-out;
+}
+a:visited {
+  color: currentColor;
+}
+a:hover {
+  text-decoration: underline;
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(#0ba6d7, #0ba6d7);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #0ba6d7;
+  text-decoration: none;
+}
+a:hover::selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+a:hover *,
+a:hover *:after,
+a:hover:after,
+a:hover *:before,
+a:hover:before {
+  text-shadow: none;
+}
+a:hover:visited {
+  color: #0ba6d7;
+}
+article:hover a {
+  color: #0ba6d7;
+}
+article:hover h1 a {
+  color: currentColor;
+}
+article h1 a:hover {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: currentColor;
+  text-decoration: none;
+}
+article h1 a:hover::selection {
+  text-shadow: 0.03em 0 currentColor, -0.03em 0 currentColor, 0 0.03em currentColor, 0 -0.03em currentColor, 0.06em 0 currentColor, -0.06em 0 currentColor, 0.09em 0 currentColor, -0.09em 0 currentColor, 0.12em 0 currentColor, -0.12em 0 currentColor, 0.15em 0 currentColor, -0.15em 0 currentColor;
+  background: currentColor;
+}
+article h1 a:hover::-moz-selection {
+  text-shadow: 0.03em 0 currentColor, -0.03em 0 currentColor, 0 0.03em currentColor, 0 -0.03em currentColor, 0.06em 0 currentColor, -0.06em 0 currentColor, 0.09em 0 currentColor, -0.09em 0 currentColor, 0.12em 0 currentColor, -0.12em 0 currentColor, 0.15em 0 currentColor, -0.15em 0 currentColor;
+  background: currentColor;
+}
+article h1 a:hover *,
+article h1 a:hover *:after,
+article h1 a:hover:after,
+article h1 a:hover *:before,
+article h1 a:hover:before {
+  text-shadow: none;
+}
+article h1 a:hover:visited {
+  color: currentColor;
+}
+@media screen and (min-width: 100rem) {
+  article {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
