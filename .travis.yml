@@ -7,14 +7,28 @@ branches:
     - gh-pages
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
-    git checkout -b gh-pages
+    cd $Home
+    git config --global user.email "travis@travis-ci.org"
+    git config --global user.name "travis-ci"
+    git clone --quiet --branch=gh-pages https://$GITHUB_API_KEY@github.com/HoverBaum/leilidu gh-pages > /dev/null
+
+    cd gh-pages
     git merge master
-    git config --global push.default simple
-    npm run compile-stylus
-    git add .
-    git -c user.name='travis' -c user.email='travis' commit --allow-empty -m init
+    git add -f .
+    git commit --allow-empty -m "Update gh-pages"
+
+    git push -fq origin gh-pages > /dev/null
+
+    echo -e "Updated gh-pages.\n"
+    
+#    git checkout -b gh-pages
+#    git merge master
+#    git config --global push.default simple
+#    npm run compile-stylus
+#    git add .
+#    git -c user.name='travis' -c user.email='travis' commit --allow-empty -m init
     # Make sure to make the output quiet, or else the API token will leak!
     # This works because the API key can replace your password.
-    git push --set-upstream origin gh-pages -f -q &2>/dev/null
-    cd "$TRAVIS_BUILD_DIR"
+#    git push --set-upstream origin gh-pages -f -q &2>/dev/null
+#    cd "$TRAVIS_BUILD_DIR"
   fi
