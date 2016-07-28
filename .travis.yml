@@ -7,7 +7,7 @@ branches:
     - gh-pages
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
-    git checkout gh-pages
+    git checkout -b gh-pages
     git merge master
     git config --global push.default simple
     npm run compile-stylus
