@@ -1,0 +1,83 @@
+@import "variables"
+
+article
+	max-width: contentWidth
+	text-align: justify
+
+h1,
+h2,
+strong
+	color: highlightColor
+
+h1 a,h2 a,h3 a,h4 a,h5 a {
+	font-style: normal
+}
+
+h1,h2,h3,h4,h5
+	margin-top: 1em
+	margin-bottom: 1rem
+
+// Figures
+
+.figure
+	margin-bottom: 2rem
+
+.figure__caption
+	text-align: center
+	font-size: 0.8em
+
+.figure__image
+	max-width: contentWidth
+
+figure
+	margin: 0
+
+// Lists
+
+ul, ol
+	margin 0
+
+// Blockquotes
+
+blockquote
+	color: highlightColor
+	border-left: 0.7rem solid greyishBlue
+	margin: 2rem 1rem
+	padding: 0.5rem 1rem
+	quotes: "\201C""\201D""\2018""\2019"
+
+blockquote:before
+	color: greyishBlue
+	content: "\201C" /*Unicode for Left Double Quote*/
+	font-size: 4em
+	line-height: 0.1em
+	margin-right: 0.25em
+	vertical-align: -0.4em
+
+blockquote p
+	display: inline
+	font-family: "Noto Serif", serif
+
+blockquote cite
+	&:before
+		content: "\2014 \2009"
+
+article:hover blockquote a
+	color: currentColor
+
+article blockquote:hover a
+	color: mainColor
+
+// Tables
+
+cellPadding = 0.8rem
+
+table
+	width: 100%
+	border-spacing: 0
+	th
+		border-bottom: 1px solid highlightColor
+		padding: cellPadding
+	td
+		padding: cellPadding
+		border-bottom: 1px solid lighten(highlightColor, 80%)
