@@ -43,6 +43,9 @@ p {
   font-weight: 300;
   margin-top: 15vh;
 }
+.header__title a {
+  color: #f9fafa;
+}
 .header__title a:hover {
   text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
   background-image: linear-gradient(#f9fafa, #f9fafa);
@@ -528,6 +531,7 @@ table td {
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
+height: 0.5rem,
 ::-webkit-scrollbar-track {
   background-color: #f9fafa;
 }
@@ -672,4 +676,7 @@ a:hover:visited {
 }
 .different-posts a:hover:visited {
   color: #0ba6d7;
+}
+.different-posts.different-posts_earlier {
+  margin-top: 2rem;
 }
