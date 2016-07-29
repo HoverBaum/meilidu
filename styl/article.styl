@@ -36,7 +36,7 @@ article h1 a
 // Figures
 
 .figure
-	margin-bottom: 2rem
+	margin: 2rem 0
 
 .figure__caption
 	text-align: center
@@ -101,12 +101,29 @@ table
 
 // Article infos
 
-.article__date
+.article__infos
 	font-size: 0.7rem
 	position: absolute
-	left: -4.5rem
+	left: -8.5rem
+	width: 8rem
+	text-align: right
+
+.article__infos a
+	text-shadow: none
+	background: inherit
 
 @media only screen and (max-width: breakMediumEnd)
-	.article__date
+	.article__infos
 		position: relative
 		left: 0
+		text-align: left
+		width: auto
+
+	.article__infos br
+		display: none
+
+	.article__infos span
+		margin-right: 1em
+
+.post__info span
+	margin-right: 1em

@@ -20,6 +20,5 @@ Todo:
 	- [x] tables
 	- [ ] code blocks
 	- [x] Date
-	- [ ] Author
-	- [ ] Category
+	- [x] Category
 - [x] archive page
