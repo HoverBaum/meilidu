@@ -43,6 +43,9 @@ p {
   font-weight: 300;
   margin-top: 15vh;
 }
+.header__title a {
+  color: #f9fafa;
+}
 .header__title a:hover {
   text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
   background-image: linear-gradient(#f9fafa, #f9fafa);
@@ -288,7 +291,7 @@ article h1 a {
   background: inherit;
 }
 .figure {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .figure__caption {
   text-align: center;
@@ -368,16 +371,33 @@ table td {
   padding: 0.8rem;
   border-bottom: 1px solid #d6dbdc;
 }
-.article__date {
+.article__infos {
   font-size: 0.7rem;
   position: absolute;
-  left: -4.5rem;
+  left: -8.5rem;
+  width: 8rem;
+  text-align: right;
+}
+.article__infos a {
+  text-shadow: none;
+  background: inherit;
 }
 @media only screen and (max-width: 64em) {
-  .article__date {
+  .article__infos {
     position: relative;
     left: 0;
+    text-align: left;
+    width: auto;
   }
+  .article__infos br {
+    display: none;
+  }
+  .article__infos span {
+    margin-right: 1em;
+  }
+}
+.post__info span {
+  margin-right: 1em;
 }
 .archive {
   width: 50rem;
@@ -485,6 +505,7 @@ table td {
   color: #51717b;
 }
 .archive__expendable {
+  margin-top: 0.5em;
   height: auto;
 }
 .archive__expendable:before {
@@ -506,6 +527,16 @@ table td {
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+height: 0.5rem,
+::-webkit-scrollbar-track {
+  background-color: #f9fafa;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #33474d;
 }
 @font-face {
   font-family: "Noto Sans";
@@ -645,4 +676,7 @@ a:hover:visited {
 }
 .different-posts a:hover:visited {
   color: #0ba6d7;
+}
+.different-posts.different-posts_earlier {
+  margin-top: 2rem;
 }
