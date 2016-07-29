@@ -20,20 +20,21 @@
 		<h1>Archive</h1>
 
 		<ul class="archive">
-			<li class="archive__expendable">
-				2016
+			<li class="archive__year archive__expendable">
+				<span>2016</span>
 				<ul>
-					<li class="archive__expendable">
-						August
+					<li class="archive__month archive__expendable">
+						<span>August</span>
 						<ul>
-							<li class="archive__entry">Headline</li>
-							<li class="archive__entry">Blog post</li>
+							<li class="archive__entry"><a href="#">Headline</a></li>
+							<li class="archive__entry"><a href="#">Blog post</a></li>
 						</ul>
 					</li>
-					<li>July</li>
+					<li class="archive__month archive__expendable"><span>July</span></li>
+					<li class="archive__month archive__expendable"><span>June</span></li>
 				</ul>
 			</li>
-			<li class="archive__year">2015</li>
+			<li class="archive__year archive__expendable"><span>2015</span></li>
 		</ul>
 	</main>
 
@@ -58,8 +59,8 @@
 		const expandables = document.querySelectorAll('.archive__expendable')
 		for(let i = 0; i < expandables.length; i++) {
 			expandables[i].addEventListener('click', (e) => {
-				console.log(e.target);
-				e.target.classList.toggle('archive__expendable_expanded')
+				e.stopPropagation()
+				expandables[i].classList.toggle('archive__expendable_collapsed')
 			})
 		}
 	</script>
