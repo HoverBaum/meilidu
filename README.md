@@ -23,4 +23,3 @@ Todo:
 	- [ ] Author
 	- [ ] Category
 - [x] archive page
-- [ ] categories page

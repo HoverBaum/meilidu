@@ -485,6 +485,7 @@ table td {
   color: #51717b;
 }
 .archive__expendable {
+  margin-top: 0.5em;
   height: auto;
 }
 .archive__expendable:before {
