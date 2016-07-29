@@ -9,12 +9,18 @@ That is why we discourage pagination opting for a simple "more posts". The reade
 
 Todo:
 
-- [x] header
-- [x] headlines
-- [x] general layout
-- [x] nice underline
-- [x] images
-- [x] lists
-- [x] quotes
-- [x] tables
-- [ ] code blocks
+- [ ] Posts
+	- [x] header
+	- [x] headlines
+	- [x] general layout
+	- [x] nice underline
+	- [x] images
+	- [x] lists
+	- [x] quotes
+	- [x] tables
+	- [ ] code blocks
+	- [x] Date
+	- [ ] Author
+	- [ ] Category
+- [x] archive page
+- [ ] categories page
